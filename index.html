@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="sv"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><meta name="theme-color" content="#6c5ce7"/><title>Lär dig klockan</title><link rel="stylesheet" href="style.css"></head>
+<body><main class="app">
+<header><div><span class="pill">⏰ Klockkul</span><h1>Lär dig klockan!</h1><p>Träna, samla stjärnor och bli en klockmästare ⭐</p></div><div class="score">⭐ <b id="stars">0</b></div></header>
+<section id="home">
+<h2>Vad vill du träna?</h2><div class="cards">
+<button class="mode" data-mode="analog"><span>🕐</span><b>Analog klocka</b><small>Läs visarna</small></button>
+<button class="mode" data-mode="digital"><span>12:30</span><b>Digital klocka</b><small>Förstå siffrorna</small></button>
+<button class="mode" data-mode="mix"><span>🎯</span><b>Klockmixen</b><small>Blanda analogt & digitalt</small></button>
+</div>
+<h2>Välj nivå</h2><div class="levels" id="levels"></div>
+<div class="progress"><div><b>Din resa</b><span id="progressText">0 rätt svar</span></div><div class="bar"><i id="bar"></i></div></div>
+</section>
+<section id="game" hidden><button class="back" id="back">← Tillbaka</button><div class="gamecard"><div class="gamehead"><span id="levelName"></span><span>⭐ <b id="gameStars">0</b></span></div><h2 id="question">Vad är klockan?</h2><div id="clockArea"></div><div id="answers" class="answers"></div><p id="feedback" class="feedback"></p><button id="next" class="next" hidden>Nästa →</button></div></section>
+</main><script src="app.js"></script></body></html>
